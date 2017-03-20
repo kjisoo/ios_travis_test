@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode8
 
 script:
-    - xcodebuild test -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        - xcodebuild test -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
