@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xocde8.1
+osx_image: xcode8
 
 script:
     - xcodebuild test -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator
