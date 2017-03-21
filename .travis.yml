@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode8
 
 script:
-        - xcodebuild test -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0'
+        - xcodebuild test -workspace Fail.xcworkspace -scheme Fail -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' | xcpretty -c
