@@ -13,4 +13,4 @@ defore_script:
   - fastlane snapshot reset_simulators --force
 
 script:
-  - set -o pipefail && xcodebuild clean test -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' -configuration Debug CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
+  - set -o pipefail && xcodebuild clean test -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' -configuration Debug CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
