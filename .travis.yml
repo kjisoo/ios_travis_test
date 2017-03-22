@@ -9,7 +9,7 @@ install:
   - bundle install
   - bundle exec pod install
 
-defore_script:
+before_script:
   - fastlane snapshot reset_simulators --force
 
 script:
